@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+</div>
+    <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" placeholder="Enter your name" type="text" class="box" required></label>
+        <label id="email-label">Email: <input id="email" placeholder="Enter your email" type="email" class="box" required></label>
+        <label id="number-label">Age
+(optional): <input id="number" type="number" placeholder="Age" min="15" max="110"></label>
+<label>Which option best describes your current role?
+  <select id="dropdown" class="place">
+    <option>Select current role</option>
+    <option>Student</option>
+    <option>Full time job</option>
+    <option>Full time learner</option>
+    <option>Prefer not to say</option>
+    <option>Other</option>
+  </select>
+</label>
+<div>
+<label class="ques">Would you recommend freeCodeCamp to a friend?</label>
+  <label class="sugg">
+  <input type="radio" name="recommend" value="1" class="buttons"> Definitely</label>
+  <label class="sugg">
+  <input type="radio" name="recommend" value="2" class="buttons">
+  Maybe</label>
+  <label class="sugg">
+  <input type="radio" name="recommend" value="3" class="buttons">
+  Not Sure</label>
+</div>
+<div>
+<label class="ques">
+  What would you like to see improved? (Check all that apply)</label>
+  <label class="improv">
+  <input type="checkbox" value="1" class="buttons"> Front-end Projects Front-end Projects</label>
+  <label class="improv">
+  <input type="checkbox" value="2" class="buttons">
+  Back-end Projects</label>
+  <label class="improv">
+  <input type="checkbox" value="3" class="buttons">
+  Data Visualization</label>
+  <label class="improv">
+  <input type="checkbox" value="4" class="buttons">
+  Challenges</label>
+  <label class="improv">
+  <input type="checkbox" value="5" class="buttons">
+  Open Source Community</label>
+  <label class="improv">
+  <input type="checkbox" value="6" class="buttons">
+  Gitter help rooms</label>
+  <label class="improv">
+  <input type="checkbox" value="7" class="buttons">
+  Videos</label>
+  <label class="improv">
+  <input type="checkbox" value="8" class="buttons">
+  City Meetups</label>
+  <label class="improv">
+  <input type="checkbox" value="9" class="buttons">
+  Wiki</label>
+  <label class="improv">
+  <input type="checkbox" value="10" class="buttons">
+  Forum</label>
+  <label class="improv">
+  <input type="checkbox" value="11" class="buttons">
+  Additional Courses
+  </label>
+</div>
+<label>Any comments or suggestions?
+  <textarea placeholder="Enter your comment here..."></textarea>
+</label>
+<input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+  <footer></footer>
+</html>

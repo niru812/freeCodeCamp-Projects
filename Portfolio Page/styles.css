@@ -1,0 +1,259 @@
+*{
+    /* background: rgb(0 100 0 / 0.1) !important; */
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+#navbar{
+    position:fixed;
+    width:100%;
+    background-color: white;
+    z-index: 1;
+}
+
+nav>ul{
+    margin:0px;
+    list-style-type: none;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav li{
+    padding:20px 0px;
+    font-size:22px;
+}
+
+nav li:last-child{
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    padding:20px 40px;
+}
+
+nav #aboutlink:hover{
+    color:#f36d5e;
+}
+
+nav #worklink:hover{
+    color:#82dcff;
+}
+
+nav #contactlink:hover{
+    color:#ffc800;
+}
+
+@media only screen and (max-width: 672px) {
+        #navbar{
+            display: flex;
+            justify-content: center;
+        }
+}
+
+#welcome-section{
+   min-height:40.5em;
+   display:flex;
+   align-items: center;
+}
+
+#welcome-section .image{
+    background-image: url('https://i.postimg.cc/Mp5kMXb4/pngwing-com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:right;
+    height: 40.5em;
+    width:100%;
+    transition: background-image 10s ease-in-out;
+}
+#welcome-section .me{
+    position:absolute;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+#welcome-section .hi{
+    font-size:7em;
+    margin:0;
+}
+
+#welcome-section .name{
+    display:inline;
+    font-size: 4.5em;
+    margin:0;
+}
+
+#welcome-section h2{
+    display:inline;
+    margin-left:15px;
+    font-size: 2.5em;
+}
+
+#welcome-section h3{
+    margin-top:20px;
+    font-size:2.05em;
+    color:#f36d5e;
+}
+
+
+@media only screen and (max-width: 1220px) {
+    #welcome-section .image{
+        filter: blur(3px);
+    }
+
+    #welcome-section h1,h2{
+        text-shadow:2px 2px 4px #bfbfbf;
+    }
+    
+    #welcome-section h3{
+        text-shadow: 2px 2px 3px black;
+    }
+}
+
+@media only screen and (max-width: 558px){
+    #welcome-section .here{
+        display: block;
+        margin: 0;
+        margin-top: 6px;
+    }
+}
+
+#projects h3{
+    text-align: center;
+    margin-top: 2.5em;
+    font-size: 2.1em;
+    margin-bottom: 0;
+}
+
+#projects .projectgrid{
+    min-height:29.5em;
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-auto-columns:min-content;
+    grid-auto-rows: min-content;
+    grid-column-gap: 120px;
+    margin-top: 50px;
+}
+
+#projects .project-tile{
+    text-align: center;
+    border:1px solid #666666;
+    border-radius: 7px;
+}
+
+#projects #ytd{
+    width:15em;
+    height:17em;
+    filter:blur(1px);
+    border-radius: 5px;
+}
+
+#projects #fcc{
+    width:15em;
+    height: 17em;
+    filter:blur(1px);
+    border-radius: 5px;
+}
+
+#projects h4{
+    margin-top: 1em;
+    margin-bottom:7px;
+    color: black;
+}
+
+#projects p{
+    margin-top:0px;
+    font-size: 13px;
+    color: #808080;
+}
+
+#projects a{
+    text-decoration: None;
+    color:black;
+}
+
+@media only screen and (max-width: 750px) {
+    #projects .projectgrid{
+        grid-auto-flow: row;
+        gap:60px;
+    }
+    
+    #projects .project-tile:last-child{
+        margin-bottom: 5em;
+    }
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 17em;
+    gap:10px;
+}
+
+#contact h3{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2.4em;
+}
+
+#contact .contactgrid{
+    display: grid;
+    gap:100px;
+    grid-auto-flow: column;
+    grid-auto-rows: max-content;
+    grid-auto-columns: max-content;
+    align-items: center;
+}
+
+#contact i{
+    font-size: 40px;
+}
+
+#contact .contact-tile{
+    height: 100%;
+}
+
+#contact h4{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+#contact a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#contact .git:hover{
+    color:grey;
+}
+
+#contact #insta:hover{
+    color:rgb(255, 0, 98);
+}
+
+#contact #whatsapp:hover{
+    color:rgb(22, 199, 99);
+}
+
+#contact #mail:hover{
+    color:rgb(118, 20, 20);
+}
+
+@media only screen and (max-width: 670px){
+    #contact .contactgrid{
+        gap:50px;
+    }    
+}
